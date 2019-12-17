@@ -1,0 +1,18 @@
+
+public class test {
+	
+	
+	
+	public static void main(String[] args) {
+		PhoneCode phoneCode = new PhoneCode();
+		// 获取随机验证码
+		String code = phoneCode.getCode();
+		// 接收短信的手机号
+		String phone = "需要接受短信的电话号码";
+		// 调用发短信的方法
+		phoneCode.sendCode(phone, code);
+	}
+
+	
+	
+}
